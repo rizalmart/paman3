@@ -1,0 +1,455 @@
+2024-05-03 21:00  rizalmart
+	* Ported to GTK+3
+
+2007-10-30 17:05  lennart
+
+	* Makefile.am, doc/README.html.in: prepare release
+
+2007-08-15 23:50  lennart
+
+	* Makefile.am, configure.ac: bump version and add fedora-snapshot
+	  target
+
+2007-08-07 00:18  lennart
+
+	* src/paman.glade: minor tweaks
+
+2007-05-23 23:39  lennart
+
+	* LICENSE, autogen.sh, src/ClientWindow.cc, src/ClientWindow.hh,
+	  src/MainWindow.cc, src/MainWindow.hh, src/ModuleWindow.cc,
+	  src/ModuleWindow.hh, src/SampleWindow.cc, src/SampleWindow.hh,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkInputWindow.cc, src/SinkInputWindow.hh,
+	  src/SinkWindow.cc, src/SinkWindow.hh, src/SourceOutputWindow.cc,
+	  src/SourceOutputWindow.hh, src/SourceWindow.cc,
+	  src/SourceWindow.hh, src/StatWindow.cc, src/StatWindow.hh,
+	  src/paman.cc, src/paman.hh: Fix license mess: change everything
+	  to GPL
+
+2006-08-26 21:22  lennart
+
+	* doc/README.html.in: update docs for 0.9.3
+
+2006-08-26 21:22  lennart
+
+	* configure.ac: bump version and requirements
+
+2006-08-03 00:16  lennart
+
+	* src/MainWindow.cc: move sink input/source output list items if
+	  they are moved between sinks/sources
+
+2006-07-24 20:18  lennart
+
+	* autogen.sh: Make jhbuild happy by adding a file autgen.sh
+
+2006-07-08 16:14  lennart
+
+	* doc/README.html.in: update readme file for 0.9.2 release
+
+2006-06-21 14:10  lennart
+
+	* src/ClientWindow.cc, src/MainWindow.cc, src/ModuleWindow.cc,
+	  src/SampleWindow.cc, src/ServerInfoManager.cc,
+	  src/SinkInputWindow.cc, src/SinkWindow.cc,
+	  src/SourceOutputWindow.cc, src/SourceWindow.cc,
+	  src/StatWindow.cc, src/paman.cc: include config.h everywhere
+	  properly
+
+2006-06-20 23:58  lennart
+
+	* src/ServerInfoManager.cc: add --record to command line for
+	  pavumeter
+
+2006-06-20 23:41  lennart
+
+	* doc/README.html.in: update README
+
+2006-06-20 23:38  lennart
+
+	* Makefile.am, bootstrap.sh, configure.ac, doc/Makefile.am,
+	  doc/style.css, src/MainWindow.hh, src/Makefile.am,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh, src/paman.cc,
+	  src/paman.desktop, src/paman.glade: s/polyp/pulse/g
+
+2006-06-08 14:46  ossman
+
+	* src/paman.desktop: Fix typo
+
+2006-06-02 20:36  lennart
+
+	* src/Makefile.am: actually ship the .desktop file
+
+2006-06-02 20:31  lennart
+
+	* doc/README.html.in: prepare docs for release 0.9.1
+
+2006-06-02 20:26  lennart
+
+	* configure.ac: bump version
+
+2006-05-31 17:54  lennart
+
+	* src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkWindow.cc, src/SourceWindow.cc: Make the volume meter
+	  buttons insensitive if pavumeter is not in the $PATH
+
+2006-05-31 12:39  ossman
+
+	* src/Makefile.am, src/paman.desktop: Add .desktop file.
+
+2006-05-30 21:08  lennart
+
+	* src/paman.glade: use "go-jump" named icon for all "go to" labels
+
+2006-05-28 00:52  lennart
+
+	* src/paman.glade: use some more stock icons
+
+2006-05-26 23:53  lennart
+
+	* doc/README.html.in: update docs
+
+2006-05-26 23:47  lennart
+
+	* configure.ac: bump for 0.9.0
+
+2006-05-15 20:17  lennart
+
+	* configure.ac: fix configure.ac
+
+2006-04-26 12:48  lennart
+
+	* src/SampleWindow.cc: optimizations
+
+2006-04-26 12:47  lennart
+
+	* src/paman.cc: compatibility with gcc 3.4
+
+2006-04-22 18:24  lennart
+
+	* src/Makefile.am: fix pavumeter path
+
+2006-04-21 20:46  lennart
+
+	* Makefile.am: Makefile update
+
+2006-04-21 20:39  lennart
+
+	* Makefile.am, bootstrap.sh, configure.ac, doc/README.html.in,
+	  doc/style.css: documentation update
+
+2006-04-10 19:51  lennart
+
+	* src/ServerInfoManager.cc: fix source volume changing
+
+2006-04-10 17:14  lennart
+
+	* src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkInputWindow.cc, src/SinkInputWindow.hh,
+	  src/SinkWindow.cc, src/SinkWindow.hh, src/SourceOutputWindow.cc,
+	  src/SourceOutputWindow.hh, src/SourceWindow.cc,
+	  src/SourceWindow.hh, src/paman.glade: * add volume control for
+	  sources
+	  * add channel map information to sinks/source/sink inputs/source
+	  outputs
+
+2006-04-07 21:53  lennart
+
+	* configure.ac: fix build system
+
+2006-04-07 21:11  lennart
+
+	* configure.ac: update configure.ac for newest polypaudio API
+
+2006-04-07 21:11  lennart
+
+	* src/ClientWindow.cc, src/ClientWindow.hh, src/MainWindow.cc,
+	  src/MainWindow.hh, src/ModuleWindow.cc, src/ModuleWindow.hh,
+	  src/SampleWindow.cc, src/SampleWindow.hh,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkInputWindow.cc, src/SinkInputWindow.hh,
+	  src/SinkWindow.cc, src/SinkWindow.hh, src/SourceOutputWindow.cc,
+	  src/SourceOutputWindow.hh, src/SourceWindow.cc,
+	  src/SourceWindow.hh, src/StatWindow.cc, src/StatWindow.hh,
+	  src/paman.cc, src/paman.hh: * add copyright blurb to source files
+	  * fix included headers for newest polypaudio API
+
+2006-02-16 13:08  ossman
+
+	* src/paman.glade: Update to current glade format (only new
+	  fields).
+
+2006-02-16 13:08  ossman
+
+	* src/paman.glade: Choose some more appropriate icons.
+
+2006-02-16 13:02  ossman
+
+	* src/paman.glade: "Properties" is a better description of what we
+	  do than "Open".
+
+2006-02-16 13:00  ossman
+
+	* src/ClientWindow.cc, src/ClientWindow.hh, src/SampleWindow.cc,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkInputWindow.cc, src/SinkWindow.cc, src/paman.cc,
+	  src/paman.glade: Update to the new polypaudio API.
+
+2005-01-08 22:33  lennart
+
+	* configure.ac, src/ClientWindow.cc, src/ClientWindow.hh,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkInputWindow.cc, src/SinkInputWindow.hh,
+	  src/SinkWindow.cc, src/SinkWindow.hh, src/paman.glade: fix paman
+	  for polypaudio 0.8
+
+2004-11-21 22:36  lennart
+
+	* doc/README.html.in: update readme
+
+2004-11-21 18:45  lennart
+
+	* configure.ac: bump version numbers
+
+2004-11-20 21:22  lennart
+
+	* src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkInputWindow.cc, src/SinkInputWindow.hh,
+	  src/SourceOutputWindow.cc, src/SourceOutputWindow.hh,
+	  src/paman.glade: show resample methods
+
+2004-11-17 03:10  lennart
+
+	* src/paman.cc: * dont autospawn daemons
+	  * show a nice titlebar
+
+2004-10-27 22:44  lennart
+
+	* configure.ac, doc/README.html.in: prepare next release
+
+2004-10-24 00:48  lennart
+
+	* src/SinkInputWindow.cc, src/SinkWindow.cc: make use of user
+	  volume API
+
+2004-09-29 20:13  lennart
+
+	* configure.ac, src/MainWindow.cc: update to polypaudio 0.6
+
+2004-09-20 21:54  lennart
+
+	* doc/README.html.in: prepare for dist
+
+2004-09-20 21:20  lennart
+
+	* doc/README.html.in, doc/screenshot.png, src/Makefile.am,
+	  src/paman.glade: assorted updates
+
+2004-09-19 23:14  lennart
+
+	* src/MainWindow.cc, src/SampleWindow.cc, src/ServerInfoManager.cc,
+	  src/ServerInfoManager.hh, src/SinkInputWindow.cc,
+	  src/SinkWindow.cc, src/SourceOutputWindow.cc,
+	  src/SourceWindow.cc: update to current polypaudio
+
+2004-09-16 22:57  lennart
+
+	* src/ClientWindow.cc, src/ClientWindow.hh,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkInputWindow.cc, src/SinkInputWindow.hh,
+	  src/SourceOutputWindow.cc, src/SourceOutputWindow.hh: implement
+	  client/source-output/sink-input killing
+
+2004-09-16 00:02  lennart
+
+	* configure.ac, src/ClientWindow.cc, src/ClientWindow.hh,
+	  src/Makefile.am, src/ModuleWindow.cc, src/SampleWindow.cc,
+	  src/SampleWindow.hh, src/ServerInfoManager.cc,
+	  src/ServerInfoManager.hh, src/SinkInputWindow.cc,
+	  src/SinkInputWindow.hh, src/SinkWindow.cc, src/SinkWindow.hh,
+	  src/SourceOutputWindow.cc, src/SourceOutputWindow.hh,
+	  src/SourceWindow.cc, src/SourceWindow.hh, src/StatWindow.cc,
+	  src/paman.cc, src/paman.glade: update to new API
+	  show source and source_output latencies
+	  ad kill buttons to client/sink_input/source_output (incomplete)
+	  add vumeter buttons to sink/source
+
+2004-09-12 13:19  lennart
+
+	* configure.ac: update for polypaudio 0.5
+
+2004-09-08 00:04  lennart
+
+	* Makefile.am, configure.ac, doc, doc/README.html.in,
+	  doc/screenshot.png, src/ClientWindow.cc, src/ClientWindow.hh,
+	  src/Makefile.am, src/ModuleWindow.cc, src/ModuleWindow.hh,
+	  src/SampleWindow.cc, src/SampleWindow.hh,
+	  src/ServerInfoManager.cc, src/SinkInputWindow.cc,
+	  src/SinkInputWindow.hh, src/SinkWindow.cc, src/SinkWindow.hh,
+	  src/SourceOutputWindow.cc, src/SourceOutputWindow.hh,
+	  src/SourceWindow.cc, src/SourceWindow.hh, src/StatWindow.cc,
+	  src/StatWindow.hh: Assorted updates
+
+2004-09-06 21:56  lennart
+
+	* src/MainWindow.cc, src/MainWindow.hh, src/ServerInfoManager.cc,
+	  src/paman.glade: add support for showing default sink and default
+	  source
+
+2004-09-03 23:55  lennart
+
+	* src/SampleWindow.cc, src/SampleWindow.hh,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/StatWindow.cc, src/StatWindow.hh, src/paman.glade: show size
+	  of sample cache in stat window
+	  show size in sample window
+
+2004-09-01 14:46  lennart
+
+	* ., src, src/Makefile.am, src/SinkInputWindow.cc,
+	  src/SinkWindow.cc, src/paman.glade: show volumes in dB as well
+
+2004-08-27 19:03  lennart
+
+	* src/Makefile.am: glade fix
+
+2004-08-27 19:02  lennart
+
+	* doc/README.html.in: doc fix
+
+2004-08-27 18:31  lennart
+
+	* doc/README.html.in: readme update
+
+2004-08-27 16:20  lennart
+
+	* configure.ac, src/MainWindow.cc, src/Makefile.am,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkInputWindow.cc: update for polypaudio 0.3
+
+2004-08-20 13:07  lennart
+
+	* doc/README.html.in: documentation update
+
+2004-08-20 10:58  lennart
+
+	* Makefile.am: Corrected homepage makefile target
+
+2004-08-20 10:55  lennart
+
+	* ., configure.ac, doc/README.html.in, src/Makefile.am,
+	  src/paman.hh: build fixes
+
+2004-08-19 22:40  lennart
+
+	* Makefile.am, configure.ac, doc, doc/Makefile.am,
+	  doc/README.html.in, doc/screenshot.png, doc/style.css: add
+	  documentation
+
+2004-08-19 22:01  lennart
+
+	* LICENSE: add license
+
+2004-08-19 21:54  lennart
+
+	* src/MainWindow.cc, src/MainWindow.hh, src/Makefile.am,
+	  src/SampleWindow.cc, src/SampleWindow.hh,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/paman.glade: sample cache stuff
+
+2004-08-18 01:01  lennart
+
+	* src/MainWindow.cc, src/MainWindow.hh, src/Makefile.am,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkInputWindow.cc, src/SinkWindow.cc,
+	  src/SourceOutputWindow.cc, src/SourceWindow.cc,
+	  src/StatWindow.cc, src/StatWindow.hh, src/paman.cc,
+	  src/paman.glade, src/paman.hh: add support for statwindow
+
+2004-08-16 23:17  lennart
+
+	* src/MainWindow.cc, src/ServerInfoManager.cc: fix source output
+	  and sink input updateing
+
+2004-08-16 19:56  lennart
+
+	* src: ignore *bak files
+
+2004-08-16 19:55  lennart
+
+	* src/MainWindow.cc, src/MainWindow.hh, src/Makefile.am,
+	  src/ServerInfoManager.cc, src/ServerInfoManager.hh,
+	  src/SinkInputWindow.cc, src/SinkInputWindow.hh,
+	  src/SourceOutputWindow.cc, src/SourceOutputWindow.hh,
+	  src/paman.glade: add sink input/source output support (currently
+	  broken)
+
+2004-08-15 15:57  lennart
+
+	* src/SinkInputWindow.cc, src/SinkInputWindow.hh,
+	  src/SourceOutputWindow.cc, src/SourceOutputWindow.hh: create new
+	  window files
+
+2004-08-15 13:15  lennart
+
+	* configure.ac, src/ClientWindow.hh, src/MainWindow.hh,
+	  src/Makefile.am, src/ModuleWindow.hh, src/ServerInfo.cc,
+	  src/ServerInfo.hh, src/ServerInfoManager.cc,
+	  src/ServerInfoManager.hh, src/SinkWindow.hh, src/paman.hh: Rename
+	  ServerInfo.{cc,hh} to ServerInfoManager.{cc,hh}
+
+2004-08-15 12:58  lennart
+
+	* ., Makefile.am, bootstrap.sh, configure.ac, src, src/Makefile,
+	  src/Makefile.am, src/ServerInfo.cc, src/paman.cc:
+	  Autotoolification
+
+2004-08-15 11:27  lennart
+
+	* ClientWindow.cc, ClientWindow.hh, MainWindow.cc, MainWindow.hh,
+	  Makefile, ModuleWindow.cc, ModuleWindow.hh, ServerInfo.cc,
+	  ServerInfo.hh, SinkWindow.cc, SinkWindow.hh, SourceWindow.cc,
+	  SourceWindow.hh, paman.cc, paman.glade, paman.gladep, paman.hh,
+	  src, src/ClientWindow.cc, src/ClientWindow.hh, src/MainWindow.cc,
+	  src/MainWindow.hh, src/Makefile, src/ModuleWindow.cc,
+	  src/ModuleWindow.hh, src/ServerInfo.cc, src/ServerInfo.hh,
+	  src/SinkWindow.cc, src/SinkWindow.hh, src/SourceWindow.cc,
+	  src/SourceWindow.hh, src/paman.cc, src/paman.glade,
+	  src/paman.gladep, src/paman.hh: Move everything to src/ directory
+
+2004-08-15 11:26  lennart
+
+	* ServerInfo.cc, ServerInfo.hh, SinkWindow.cc, SinkWindow.hh,
+	  paman.glade: Implement volume changing
+
+2004-08-15 00:03  lennart
+
+	* MainWindow.cc, ServerInfo.cc, paman.cc, paman.glade: Update to
+	  current polypaudio library
+
+2004-08-12 23:26  lennart
+
+	* ClientWindow.cc, ClientWindow.hh, MainWindow.cc, MainWindow.hh,
+	  Makefile, ModuleWindow.cc, ModuleWindow.hh, ServerInfo.cc,
+	  ServerInfo.hh, SinkWindow.cc, SinkWindow.hh, SourceWindow.cc,
+	  SourceWindow.hh, paman.cc, paman.glade, paman.hh: add support for
+	  listing clients and modules
+
+2004-08-11 15:11  lennart
+
+	* MainWindow.cc, MainWindow.hh, ServerInfo.cc, ServerInfo.hh,
+	  paman.glade: half work
+
+2004-08-10 13:04  lennart
+
+	* ., MainWindow.cc, MainWindow.hh, Makefile, ServerInfo.cc,
+	  ServerInfo.hh, SinkWindow.cc, SinkWindow.hh, SourceWindow.cc,
+	  SourceWindow.hh, paman.cc, paman.glade, paman.gladep, paman.hh:
+	  Initial commit
+
+2004-08-10 12:51  lennart
+
+	* .: Create trunk directory
+
