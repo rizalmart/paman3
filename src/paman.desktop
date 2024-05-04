@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PulseAudio Manager
+Comment=Manager your PulseAudio sound server.
+Exec=paman
+Icon=audio-card
+StartupNotify=true
+Type=Application
+Categories=Application;AudioVideo;Audio;
