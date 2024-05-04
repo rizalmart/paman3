@@ -53,7 +53,7 @@ else
     run_versioned autoheader 2.59
     run_versioned automake "$VERSION" -a -c --foreign
 
-    CFLAGS="-g -O0" ./configure --sysconfdir=/etc "$@"
+    CFLAGS="-g -O0" ./configure --prefix=/usr --sysconfdir=/etc "$@"
 
     make clean
 fi
